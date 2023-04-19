@@ -1,0 +1,103 @@
+"""Comparación"""
+
+"""
+Construir una expresión lógica que use TODAS las variables y cuyo resultado sea
+True si 2 personas tienen el mismo nombre pero distinta edad.
+Aclaración: Se puede utilizar and, or y not.
+"""
+
+persona_01 = "Kevin"
+edad_01 = 24
+persona_02 = "Kevin"
+edad_02 = 41
+
+# COMPLETAR - INICIO
+comparar_nombre_y_edad = persona_01 == persona_02 and edad_01 != edad_02 
+print(f"ej1{comparar_nombre_y_edad}")
+#if persona_01 == persona_02 and edad_01 != edad_02:
+#    print(comparar_nombre_y_edad==True)
+#else:
+#    print(comparar_nombre_y_edad==False)
+# COMPLETAR - FIN
+
+assert comparar_nombre_y_edad
+
+
+"""
+Construir una expresión lógica que use TODAS las variables y cuyo resultado sea
+True si un auto no es de marca Ford y su modelo es igual o anterior al año 2000.
+Aclaración: Se puede utilizar and, or y not.
+"""
+
+marca_del_auto = "Chevrolet"
+modelo_de_auto = 1998
+
+# COMPLETAR - INICIO
+comparar_marca_y_modelo = marca_del_auto != "Ford" and modelo_de_auto <= 2000
+print(f"ej2{comparar_marca_y_modelo}")
+
+#if marca_del_auto != "Ford" and modelo_de_auto <= 2000:
+#    print(comparar_marca_y_modelo==True)
+#else:
+#    print(comparar_marca_y_modelo==False)
+# COMPLETAR - FIN
+
+assert comparar_marca_y_modelo
+
+
+"""
+Construir una expresión lógica que use TODAS las variables y cuyo resultado sea
+True si la superfice del campo 1 es menor a la del campo 2 y la superficie del
+campo 2 es mayor a la del campo 3.
+Restricción: Utilizar comparaciones encadenadas - No utilizar and, or ni not.
+"""
+
+superficie_de_campo_01 = 85121
+superficie_de_campo_02 = 851212
+superficie_de_campo_03 = 8512
+
+# COMPLETAR - INICIO
+comparar_superficie = superficie_de_campo_01 < superficie_de_campo_02 > superficie_de_campo_03
+print(f"ej3{comparar_superficie}")
+#if superficie_de_campo_01 < superficie_de_campo_02:
+#    if superficie_de_campo_02 > superficie_de_campo_03:
+#        print(comparar_superficie==True)
+#    else:
+#        print(comparar_superficie==False)
+#else:
+#    print(comparar_superficie==False)
+
+# COMPLETAR - FIN
+
+assert comparar_superficie
+
+
+"""
+Construir una expresión lógica que use TODAS las variables y cuyo resultado sea
+True si la cantidad de bananas es menor a la mitad de la cantidad de naranjas,
+la mitad de naranjas es menor a dos veces la cantidad de manzanas y dos veces
+la cantidad de manzanas es menor o igual a la cantidad de peras al cuadrado.
+Restricción: Utilizar comparaciones encadenadas y no utilizar and, or ni not.
+"""
+
+bananas = 100
+naranjas = 400
+manzanas = 300
+peras = 30
+
+# COMPLETAR - INICIO
+comparar_frutas = bananas < naranjas/2 < manzanas*2 <= peras**2
+print(f"ej4{comparar_frutas}")
+#if bananas < naranjas/2:
+#    if naranjas/2 < manzanas*2:
+#        if manzanas*2 <= peras**2:
+#            print(comparar_frutas==True)
+#        else:
+#            print(comparar_frutas==False)
+#    else:
+#        print(comparar_frutas==False)  
+#else:
+#    print(comparar_frutas==False)
+# COMPLETAR - FIN
+
+assert comparar_frutas
